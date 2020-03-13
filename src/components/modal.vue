@@ -1,13 +1,13 @@
 <script>
 
-import sir from './header.vue';
+import top from './header.vue';
 import foot from './footer.vue';
 
 export default {
   name: "modal",
    components: {
    
-      sir,
+      top,
       foot
     }
  
@@ -23,11 +23,11 @@ export default {
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
-        <sir/>
+        <top @close="$emit('close')"/>
         <section class="modal-body" id="modalDescription">
-          <slot name="body">I'm the default body!</slot>
+          <slot name="body"> Body!</slot>
         </section>
-        <foot/>
+        <foot @close="$emit('close')"/>
       </div>
     </div>
   </transition>

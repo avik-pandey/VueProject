@@ -41,11 +41,13 @@
   </div>
 </template>
 <style  >
-@media screen and (min-width: 480px) {
+
   .btn{
-    position: relative;
-   text-align:center;
+    top:20%;
+    left:45%;
+    position: absolute;
+   
    background: #4aae9b;
   }
-}
+
 </style>

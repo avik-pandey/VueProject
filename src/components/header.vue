@@ -1,8 +1,8 @@
 <script>
 export default {
-  name: "sir",
+  name: "top",
    methods: {
-    close() {
+    closeModal() {
       this.$emit("close");
     }
   }
@@ -11,7 +11,7 @@ export default {
 <template>
   <header class="modal-header" id="modalTitle">
     <slot name="header">
-      This is the default tile!
+      Title!
       <button
         type="button"
         class="btn-close"

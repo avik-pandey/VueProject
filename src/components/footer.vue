@@ -2,12 +2,9 @@
 export default {
   name: "foot",
    methods: {
-    close() {
-      this.$emit("close");
-      console.log("ok");
-    },
+   
     closeModal() {
-        this.isModalVisible = false;
+        this.$emit('close');
       }
   }
 };
@@ -17,7 +14,7 @@ export default {
 <template>
   <footer class="modal-footer">
     <slot name="footer">
-      I'm the default footer!
+       Footer!
       <button
         type="button"
         class="btn-green"
